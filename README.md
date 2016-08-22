@@ -2,6 +2,13 @@
  location: SF
 -->
 
+This was a challenging assignment! I found that removing myself for the original functions was tough and slightly confusing. Working incrementally helped solved this problem.
+
+William Namen
+https://github.com/sf-wdi-31/building-js-iterators-lab.git
+
+
+
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
 # Building Iterator Methods
