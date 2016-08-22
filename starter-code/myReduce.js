@@ -3,8 +3,14 @@
 
 function myReduce(arr, callback) {
 
-//  CODE INSIDE HERE   //
+  var sum = 0;
 
+  for (var i = 0; i <= arr.length - 1; i++) {
+    callback(arr[i], i, arr)
+    sum += arr[i];
+  }
+
+  return sum;
 }
 
 
