@@ -1,13 +1,21 @@
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce for more details
 // Don't worry about initialValue at first. You can always add it in later.
 
-function myReduce(arr, callback) {
+function myReduce(arr, callback, initialValue) {
 
-  var sum = 0;
+  var i;
+  var sum;
 
-  for (var i = 0; i <= arr.length - 1; i++) {
-    callback(arr[i], i, arr)
-    sum += arr[i];
+  if (initialValue == undefined) {
+    sum = arr[0];
+    i = 1;
+  } else {
+    sum = initialValue;
+    i = 0;
+  }
+
+  for (; i <= arr.length - 1; i++) {
+    sum = callback(sum, arr[i], i, arr)
   }
 
   return sum;
