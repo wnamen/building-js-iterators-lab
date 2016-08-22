@@ -1,8 +1,14 @@
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Filter
 function myFilter(arr, callback) {
+  var filtered = [];
 
-//  CODE INSIDE HERE   //
+  for (var i = 0; i <= arr.length - 1; i++){
+    if (callback(arr[i], i, arr)) {
+      filtered.push(arr[i]);
+    }
+  }
 
+  return filtered;
 }
 
 
